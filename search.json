@@ -93,9 +93,23 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "About Me",
     "section": "",
-    "text": "About this site\n\n1 + 1\n\n[1] 2"
+    "text": "My career includes nearly a decade of data science, analytics, and machine learning alongside numerous stints of entrepreneurship and career breaks. That time has been spent at opposite ends of the intensity spectrum - about four years working for a small consulting firm trying to punch up, then just as long working for Penn State and UC - Irvine.\nI’ve had the chance to consult for Accenture, Deloitte, Meta, Walmart, Sam’s Club and Lockheed Martin, and now operate more distinctly in biostatistics, ML, and data engineering contexts for my clients at UCI. I split my time relatively evenly across R, Python, and SAS (mostly converting legacy SAS projects to R or Python), though I confess a preference for R.\nI do a little bit of everything, especially as research partners requisition work involving Epic, TriNetX, or AllOfUs data. My statistician colleagues don’t want to deal with that level of data engineering (I don’t blame them), so I’m happy to take charge and put things in order. My coworkers and my collaborators count on me for reliable modeling, instructive inference, steady pipelines, and interactive handovers."
+  },
+  {
+    "objectID": "about.html#professional",
+    "href": "about.html#professional",
+    "title": "About Me",
+    "section": "",
+    "text": "My career includes nearly a decade of data science, analytics, and machine learning alongside numerous stints of entrepreneurship and career breaks. That time has been spent at opposite ends of the intensity spectrum - about four years working for a small consulting firm trying to punch up, then just as long working for Penn State and UC - Irvine.\nI’ve had the chance to consult for Accenture, Deloitte, Meta, Walmart, Sam’s Club and Lockheed Martin, and now operate more distinctly in biostatistics, ML, and data engineering contexts for my clients at UCI. I split my time relatively evenly across R, Python, and SAS (mostly converting legacy SAS projects to R or Python), though I confess a preference for R.\nI do a little bit of everything, especially as research partners requisition work involving Epic, TriNetX, or AllOfUs data. My statistician colleagues don’t want to deal with that level of data engineering (I don’t blame them), so I’m happy to take charge and put things in order. My coworkers and my collaborators count on me for reliable modeling, instructive inference, steady pipelines, and interactive handovers."
+  },
+  {
+    "objectID": "about.html#data-science-ml-toolkit",
+    "href": "about.html#data-science-ml-toolkit",
+    "title": "About Me",
+    "section": "Data Science & ML Toolkit",
+    "text": "Data Science & ML Toolkit\n\nR: tidyverse, tidymodels, glm, lmer, survival, caret, clustMixType, XGBoost, Prophet, sparkr / sparklyr, torch, Keras (+ TensorFlow), Shiny, Plotly, Leaflet, ggplot2\nPython: gensim, spaCy, XGBoost, BayesianOpt, Keras (+ TensorFlow), PyTorch, PySpark\nDevOps + MLOps: GitHub (+ Actions/Workflows), Docker, Ubuntu, Bash\nData: SQL, Snowflake, Apache Arrow, Apache Parquet, Apache Spark, Hadoop, DuckDB, AWS S3, AWS Redshift\nEHR Platforms: TriNetX, AllOfUs, UKBioBank, Epic, REDCap\nOther: AWS SageMaker, AWS Textract, Jupyter, Tableau, PowerBI, Agile Scrum, PMI PMP (lapsed)"
   },
   {
     "objectID": "scrapbook.html",
