@@ -39,6 +39,8 @@ website:
           - text: Feature Engineering, A-Z by Emil Hvitfeldt
             href: https://feaz-book.com/
             target: _blank
+      - text: Portfolio
+        href: ptfl.qmd
       - text: About
         href: about.qmd
 
