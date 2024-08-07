@@ -28,7 +28,8 @@ I applied k-prototypes clustering and logistic regression to health records of v
 
 ## Select Projects
 
-### SoCal RUG 2024 Data Science Hackathon, "Best Insight" Winner: *Why Has Linguistic Isolation Improved So Markedly in California?* [\[gh\]](https://github.com/pjamespz/socalRUG-Hackathon-2024/tree/main)
+### SoCal RUG 2024 Data Science Hackathon, "Best Insight" Winner: *Why Has Linguistic Isolation Improved So Markedly in California?* 
+[\[gh\]](https://github.com/pjamespz/socalRUG-Hackathon-2024/tree/main)
 
 This hackathon challenged us to explore, extract, transform, model, and present on any data we found interesting from the University of Minnesota IPUMS database. The data engineering and ETL components of this work were nontrivial, given the size and schema used by IPUMS. We used Apache Arrow to perform our analysis on local machines - we were not given a cloud platform.
 
@@ -46,7 +47,8 @@ These methods are being used to streamline work and clear through a backlog of v
 
 {{< video ./img/shorksample.mp4 >}}
 
-### UnVAEling Network Anomalies: *Detecting Network Attacks with Variational Autoencoders* [\[gh\]](https://github.com/connormcmanigal/IoT-IDS-VAE-Classification)
+### UnVAEling Network Anomalies: *Detecting Network Attacks with Variational Autoencoders* 
+[\[gh\]](https://github.com/connormcmanigal/IoT-IDS-VAE-Classification)
 
 We borrow the known RT-IoT2022 dataset to test the utility of variational autoencoders for developing a network traffic filter. Ever-more pertinent as IoT devices proliferate, network security with decidedly slim overhead - like a predetermined network traffic model - is an appealing goal. Autoencoders are used here as an *exclusionary* filter. That is, if a burst of network traffic does *not* match a pattern known to the VAE (demonstrates high reconstruction loss), it is discarded.
 
@@ -54,7 +56,8 @@ We add to the extensive literature on this topic by testing the utility of a 'mi
 
 ![Attack vs. Normal MLVAE latent space](./img/VAE.png)
 
-### Social Media Comment Scoring: *Attempting To Reverse-Engineer a Comment-scoring Algorithm* [\[gh\]](https://github.com/connormcmanigal/IoT-IDS-VAE-Classification)
+### Social Media Comment Scoring: *Attempting To Reverse-Engineer a Comment-scoring Algorithm* 
+[\[gh\]](https://github.com/connormcmanigal/IoT-IDS-VAE-Classification)
 
 We borrow data from the UCI Machine Learning repository to perform text analysis on social media comments drawn from a recipe sharing website. Among the features was the algorithmic 'best_score' assigned to each comment, the primary driver of whether or not a comment would be displayed to a given user. We augmented the dataset with sentiment and objectivity analysis scores using VADER and TextBlob packages to try and answer: what should you write to get YOUR comment to the top of the pile?
 
