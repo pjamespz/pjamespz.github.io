@@ -1,0 +1,156 @@
+[
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "In the past, I lost track of reality trying to track a gazillion links covering every data-science-friendly programming language under the sun. **shakes head** Bad idea. Since I program in R daily, I like to keep track of R and Posit / RStudio developments. I’m mostly going to share R resources that I find useful for analytics, statistical programming, machine learning, data science workflows, and web app development. I’m enjoying Python a lot more recently so I’ll slowly build up this resources page with Python sub-topics that I find bookmark worthy.\nIn terms of the best place to start for getting into data analysis, I recommend learning SQL as this is by far the most widely used data querying language across the corporate and academic landscapes and if you master SQL, you’ve mastered most of the transformations that are possible for tabular numeric data sets. Nonetheless, I will not cover SQL resources here as I rarely write raw SQL anymore. Instead, I use R to establish data warehouse connections and I query that raw data using the common tidyverse collection of R packages to execute SQL code in the back-end (via the dbplyr package).\nR and Python are open-source programming languages for statistical computing and graphics. These two languages have friendly online (and in-person) communities devoted to making data science easier to consume, easier to apply, and more effective at solving business problems. One of the things that I like most about both languages is the thousands of packages available making almost everything in R or Python a little easier from ETL, to method chaining, to developing predictive models and interactive web apps. I certainly welcome any suggestions that you might have for the lists below!"
+  },
+  {
+    "objectID": "resources.html#r-books-classics",
+    "href": "resources.html#r-books-classics",
+    "title": "Resources",
+    "section": "R Books: Classics",
+    "text": "R Books: Classics\n\nR for Data Science (2e): Phenomenal introduction to R, the RStudio IDE, and the tidyverse collection of packages\nAdvanced R (2e): Covers concepts, methods, and advanced object-oriented structures for R\nMastering Shiny: Designed to teach the foundations of Shiny for web development and more advanced concepts such as the introduction of modules to the Shiny framework\nR Packages (2e): The definitive reference point for R package development “covering workflow and process, alongside the presentation of all the important moving parts that make up an R package”"
+  },
+  {
+    "objectID": "resources.html#r-books-applied-resources",
+    "href": "resources.html#r-books-applied-resources",
+    "title": "Resources",
+    "section": "R Books: Applied Resources",
+    "text": "R Books: Applied Resources\n\nTidy Modeling with R: Over the last few months, I’ve learned a lot from this A to Z resource on predictive modeling workflows using the tidymodels framework\nDeep Learning with R (2e): In-depth introduction to artificial intelligence and deep learning applications with R using the Keras library\nForecasting Principles and Practice (3e): Said best by the author, “The book is written for three audiences: (1) people finding themselves doing forecasting in business when they may not have had any formal training in the area; (2) undergraduate students studying business; (3) MBA students doing a forecasting elective”\nRegression and Other Studies: Super applied textbook on advanced regression techniques, Bayesian inference, and causal inference\nSupervised Machine Learning for Text Analysis in R: Written by two Posit software engineers, Emil Hvitfeldt and Julia Silge, this book is a masterclass in natural language processing taking you from the basics of NLP to real-life applications including inference and prediction\nTidy Finance with R: This is one of my favorite newer books covering complex financial modeling, valuation, and pricing and represents “an opinionated approach to empirical research in financial economics [with an] open-source code base in multiple programming languages”\nFeature Engineering A-Z: A reference guide to nearly all feature engineering methods you will encounter with examples in R and Python"
+  },
+  {
+    "objectID": "resources.html#r-packages",
+    "href": "resources.html#r-packages",
+    "title": "Resources",
+    "section": "R Packages",
+    "text": "R Packages\n\ntidyverse: A collection of packages for data manipulation and functional programming (I use dplyr, stringr, and purrr on a daily basis)\ntidymodels: Hands-down my preferred collection of packages for building reproducible machine learning recipes, workflows, model tuning, model stacking, and cross-validation\ntidyverts: A collection of packages for time series analysis that comes out of Rob Hyndman’s lab\nDT: This is an R implementation of the popular DataTables JavaScript library that lets you build polished, configurable tables for use in web reports, slides, and Shiny apps\nbs4Dash: This R Shiny framework brings Bootstrap + AdminLTE dependencies to Shiny (including 1:1 support for shinydashboard functions) and it’s my go-to for developing enterprise-grade Shiny apps\nleaflet: R implementation of the popular Leaflet JavaScript library for developing interactive maps\nplotly: An extensive graphic library for creating interactive visualizations and 3D (WebGL) charts\nembed: This package is one of my go-to packages for machine learning and I if I’m working on a classification problem, you can count on me incorporating some of the extra steps it provides for the recipes package for embedding predictors into one or more numeric columns"
+  },
+  {
+    "objectID": "resources.html#language-agnostic-etl-frameworks",
+    "href": "resources.html#language-agnostic-etl-frameworks",
+    "title": "Resources",
+    "section": "Language Agnostic ETL Frameworks",
+    "text": "Language Agnostic ETL Frameworks\n\nArrow: Apache Arrow is a columnar memory format for flat and hierarchical data, organized for efficient analytic operations, supporting zero-copy reads for lightning-fast data access without serialization overhead\nDuckDB: DuckDB is an in-process SQL OLAP database management system (that plays nicely with Arrow) capable of larger than memory processing of tabular data\nPolars: Polars is a lightning fast DataFrame library/in-memory query engine written in Rust and built upon the Arrow specification - It’s a great tool for efficient data wrangling, data pipelines, snappy APIs and much more\nSpark: Apache Spark is a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters"
+  },
+  {
+    "objectID": "resources.html#python-books",
+    "href": "resources.html#python-books",
+    "title": "Resources",
+    "section": "Python Books",
+    "text": "Python Books\n\nThe Quick Python Book (3e): This book by Naomi Ceder is a few years old now (2018) but it’s the best end-to-end intro on Python that I’ve yet read taking you from basic classes / structures to function writing to working with modules\nPython Data Science Handbook: Introduction to the core libraries essential for working with data in Python\nEffective Pandas 2: Opinionated Patterns for Data Manipulation: After a wildly successful 1st edition, Matt Harrison is back with the revised 2nd edition with easy to follow tutorials for mastering the popular Pandas library\nTidy Finance with Python: This is one of my favorite newer books covering complex financial modeling, valuation, and pricing and represents “an opinionated approach to empirical research in financial economics [with an] open-source code base”"
+  },
+  {
+    "objectID": "resources.html#python-packages",
+    "href": "resources.html#python-packages",
+    "title": "Resources",
+    "section": "Python Packages",
+    "text": "Python Packages\n\nNumPy: Brings the computational power of C and Fortran to Python programmers for applying high-level mathematical functions to arrays and more\nPandas: This is the most popular package for data manipulation and analysis with extended operations available for tabular and time series data\nMatplotlib: A comprehensive library for creating static, animated, and interactive visualizations in Python\nscikit-learn: Built on top of NumPy, SciPy, and matplotlib, “sklearn” makes the development of predictive analysis workflows a simple and reproducible process\nBeautiful Soup: The beautifulsoup4 library makes web scraping HTML and XML data a breeze\nStreamlit: Using pure Python, this package lets you build interactive web apps in minutes with no UI / front-end experience required\nShiny for Python: The popular Shiny framework for R is finally available for Python - Create highly interactive visualizations, realtime dashboards, data explorers, model demos, sophisticated workflow apps, and anything else you can imagine—all in pure Python, with no web development skills required"
+  },
+  {
+    "objectID": "ptfl.html",
+    "href": "ptfl.html",
+    "title": "Data Science Scrapbook",
+    "section": "",
+    "text": "Thank you for visiting my portfolio; here’s a modest record of some of the work I’m both proud of & able to share."
+  },
+  {
+    "objectID": "ptfl.html#papers-in-progress",
+    "href": "ptfl.html#papers-in-progress",
+    "title": "Data Science Scrapbook",
+    "section": "Papers-in-Progress",
+    "text": "Papers-in-Progress\nYiu A., Politewicz P., Salehi S., O’connell R., Chow E., Socioeconomic Deprivation and Opportunity’s Impact on Vaccine Decisions in Southern California (Pending submission, manuscript available on request)\n\nNeighborhood Opportunity Associated with Physical Fitness in California Elementary Schools\nYiu A., Politewicz P., Guo Y., Cooper D. (Pending submission, manuscript available on request)\nI analyzed the most recently available physical fitness data for California elementary and middle schools, investigating the relationships demonstrated between a schools’ geographic Childhood Opportunity Index and its students’ aerobic capacity and body composition. Mixed effects models and hierarchical Bayesian methods were both utilized, comparing and confirming our findings of improved outcomes alongside improved opportunity while controlling for correlation at the school and county level.\n\n\n\nSchool-based Physical Fitness\n\n\n\n\nSocioeconomic Deprivation and Opportunity’s Impact on Vaccine Decisions in Southern California\nYiu A., Politewicz P., Salehi S., O’connell R., Chow E., (Pending submission, manuscript available on request)\nI applied k-prototypes clustering and logistic regression to health records of vaccination decisions during the height of COVID. My research centered around mobile (drive-through) vaccine clinic deployment: who took advantage of these options, especially in Orange County, where they were established specifically to support communities in need? Findings aligned with intuitions surrounding many existing welfare programs. The people who took advantage of these clinics were not those most in need, but instead people of significant means at the upper bound of eligibility. This suggests that these clinics need to be administered with greater understanding of their audience, greater precision with their location, or greater communication regarding their presence.\n\n\n\nDrive-through Vaccination Study"
+  },
+  {
+    "objectID": "ptfl.html#select-projects",
+    "href": "ptfl.html#select-projects",
+    "title": "Data Science Scrapbook",
+    "section": "Select Projects",
+    "text": "Select Projects\n\nSoCal RUG 2024 Data Science Hackathon, “Best Insight” Winner: Why Has Linguistic Isolation Improved So Markedly in California? [gh]\nThis hackathon challenged us to explore, extract, transform, model, and present on any data we found interesting from the University of Minnesota IPUMS database. The data engineering and ETL components of this work were nontrivial, given the size and schema used by IPUMS. We used Apache Arrow to perform our analysis on local machines - we were not given a cloud platform.\nThe statistic we wanted to explore was linguistic isolation, a per-household measure. A household is linguisitically isolated if no one above the age of 15 can speak English with conversational fluency. Out of all of the states, California’s linguistic isolation dropped most sharply over the time it was measured. Our team used a combination of comprehensive EDA and random forest modeling to intuit, and then confirm, that California’s progress in this regard came from first-gen immigrant children participating in the public school system, and turning 16 with satisfactory English fluency to represent their household. Further, we used random forests to test the utility of this measure in predicting some demographic measures of interest (household income), and found it ranked highly in feature importance.\n \n\n\nCalifornia State University - Long Beach, Shark Lab: Data Engineering for Computer Vision\nWorked alongside a colleague from my cohort to provide frameworks for utilizing computer vision in CSU-LB’s infamous Shark Lab. This effort was largely back-end, focused on the engineering, storage and management side, setting up a pipeline with Docker-deployed CVAT for undergraduate researchers to smoothly load in video and quickly apply computer vision tags. We then collect and pass the combined video and xml data to generate training data for YOLOv8 with some python scripting.\nThese methods are being used to streamline work and clear through a backlog of video attached to three different research interests: shark-swimmer/surfer distance modeling from drone video, baited remote underwater video (BRUV) object detection (predator/prey, or simply indicating which sections of video are worth manual review), and wave break patterning. Computer vision was sought as a supplement for work with BRUV video in particular because water in the Pacific is much more sandy and murky compared to most other contexts, making this a challenge even for subject matter experts.\n[github to be shared upon manuscript draft completion]\n\n\n\nUnVAEling Network Anomalies: Detecting Network Attacks with Variational Autoencoders [gh]\nWe borrow the known RT-IoT2022 dataset to test the utility of variational autoencoders for developing a network traffic filter. Ever-more pertinent as IoT devices proliferate, network security with decidedly slim overhead - like a predetermined network traffic model - is an appealing goal. Autoencoders are used here as an exclusionary filter. That is, if a burst of network traffic does not match a pattern known to the VAE (demonstrates high reconstruction loss), it is discarded.\nWe add to the extensive literature on this topic by testing the utility of a ‘mixed-loss’ VAE, explicitly segregating the calculation of loss for categorical and continuous features from one another. We found gentle, yet significant, results - this is toy data, and these methods were already well-explored. This remained instructive coursework, nonetheless.\n\n\n\nAttack vs. Normal MLVAE latent space\n\n\n\n\nSocial Media Comment Scoring: Attempting To Reverse-Engineer a Comment-scoring Algorithm [gh]\nWe borrow data from the UCI Machine Learning repository to perform text analysis on social media comments drawn from a recipe sharing website. Among the features was the algorithmic ‘best_score’ assigned to each comment, the primary driver of whether or not a comment would be displayed to a given user. We augmented the dataset with sentiment and objectivity analysis scores using VADER and TextBlob packages to try and answer: what should you write to get YOUR comment to the top of the pile?\nIt turns out, it seems to be far less about what you write, and more about when you write it, plus how snappy your comments are. Polarity and subjectivity were not helpful predictors for a best_score response; instead, interactions (of any sort - positive and negative votes were both significant) and brevity were the real ticket. Performance assessment was done using MLP feed-forward NN regression. This begs the question: what makes a comment irresistible to interact with?\n\n\n\nClusters visualized by relationships between best score and comment length"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "peyton",
+    "section": "",
+    "text": "I’m a data science all-rounder! My current work at UC Irvine centers around biostatistics, experimental design, public health, database management, data engineering, data privacy, and clinical & translational science. My previous industry experience with data science encompasses predictive modeling, business analytics, big data analysis on cloud platforms, process improvement and automation, natural language processing, and computer vision.\nI’m here to help others make strategic decisions or exciting claims, with confidence."
+  },
+  {
+    "objectID": "index.html#biostatistics-data-science-data-engineering",
+    "href": "index.html#biostatistics-data-science-data-engineering",
+    "title": "peyton",
+    "section": "Biostatistics, Data Science & Data Engineering",
+    "text": "Biostatistics, Data Science & Data Engineering\nI got into data science as a natural extension of business analysis and process improvement work, simply by virtue of employing the econometrics I learned in undergrad to the problems my teams and firms were facing. After building my acumen in the training and organizational development consulting space, I pivoted and created machine learning tools for prediction and text analysis with XGBoost, gensim, spaCy, and SageMaker.\nPresently, you can find me on the tail end of another pivot, this time into research and biostatistics. As a statistical consultant at UC Irvine, I’m collaborating with other statisticians, MDs, biologists, epidemiologists, geneticists, public health experts, and clinical practitioners. I bounce back and forth between wrestling with clever imputation for low sample/high missingness clinical trials and forcefully folding immense cohorts drawn from EHR databases into secure storage with DuckDB, and everywhere in between.\nMy daily driver toolset includes RStudio, VSCode [for Python & Jupyter], SAS, Quarto, tidymodels, STAN, Apache Arrow, and Tableau."
+  },
+  {
+    "objectID": "index.html#statistics-data-science-communities",
+    "href": "index.html#statistics-data-science-communities",
+    "title": "peyton",
+    "section": "Statistics + Data Science Communities",
+    "text": "Statistics + Data Science Communities\nI am incredibly grateful to have a number of safe havens I can visit to learn, share, and meet fellow researchers and professionals in this field. Among those, especially if you’re also in SoCal, I’d credit and invite you to:\n\nSoCal R Users Group\nOrange County/Long Beach Chapter of the ASA\nCABERD Consortium"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "scrapbook.html",
+    "href": "scrapbook.html",
+    "title": "Data Science Scrapbook",
+    "section": "",
+    "text": "As an earnest, early disclaimer, I’m stealing the basis of this list from the inimitable Javier Orraca-Deatcu. I offer thanks to Javier and everyone else at SoCal RUG for inducting me into the Quarto & DuckDB fandoms, and helping me appreciate the breadth to which R can be applied.\nHere, I’m going to present a number of things I know to be helpful as well as various vignettes, package reference manuals, or case studies I’ve used in my work and have found success with. Consider these endorsements ranging from gentle to overwhelming. In the post-stackexchange/overflow era with LLM chaff filling the first three pages of all our search results, I’d say that textbook learning might be making a comeback."
+  },
+  {
+    "objectID": "scrapbook.html#specific-statistical-methodologies",
+    "href": "scrapbook.html#specific-statistical-methodologies",
+    "title": "Data Science Scrapbook",
+    "section": "Specific Statistical Methodologies",
+    "text": "Specific Statistical Methodologies\n\nLinear Mixed Models: Abandoning independence assumptions, looking at data that is explicitly hierarchical, longitudinal, or otherwise correlated.\n\nUCLA ARC Mixed Modeling Introduction\nCase Study using lme4 and afex packages\n\nLASSO [and its relatives]: Regression utilizing a penalization term for feature selection and dimension reduction.\n\nIntroduction to GLMNET from Tibsherani et al. at Stanford\nPenn State Graduate Data Mining Content on Shrinkage\nDiscussion on Deciding λ\nAssessing GLMNET results (Tibsherani et al.)\n\nAUC/ROC interpretation: Finding an optimal cutoff value for classification to maximize sensitivity and specificity.\n\nAUC/ROC in clinical diagnosis contexts\n\nRandom Forests: Machine learning through a surfeit of decision trees. Fast and efficient, but significantly black-box.\n\nIntro to the ranger R package, faster and more flexible than randomForest\nExamples from and comparisons between both rF and rr\n\nMultinomial Logistic Regression: Going beyond binary decisionmaking.\n\nMultinomial in R with nnet\n\nOrdinal Logistic Regression: Logistic with considerations for specific ordering or unequal ‘distances’ between each level of the multinomial response\n\nOrdinal Logistic with polr, from UCLA ARC\nInterpreting Ordinal Results, from UCLA ARC"
+  },
+  {
+    "objectID": "scrapbook.html#r-books-classics",
+    "href": "scrapbook.html#r-books-classics",
+    "title": "Data Science Scrapbook",
+    "section": "R Books: Classics",
+    "text": "R Books: Classics\n\nR for Data Science (2e): The de facto introduction from the COPSS winner himself\nAdvanced R (2e): Object oriented programming extensions\nMastering Shiny: [per Javier O.] - Designed to teach the foundations of Shiny for web development and more advanced concepts such as the introduction of modules to the Shiny framework\nR Packages (2e): [per Javier O.] - The definitive reference point for R package development “covering workflow and process, alongside the presentation of all the important moving parts that make up an R package”"
+  },
+  {
+    "objectID": "scrapbook.html#r-books-applied-resources",
+    "href": "scrapbook.html#r-books-applied-resources",
+    "title": "Data Science Scrapbook",
+    "section": "R Books: Applied Resources",
+    "text": "R Books: Applied Resources\n\nTidy Modeling with R: [per Javier O.] - A to Z resource on predictive modeling workflows using the tidymodels framework\nDeep Learning with R (2e): [per Javier O.] - In-depth introduction to artificial intelligence and deep learning applications with R using the Keras library\nForecasting Principles and Practice (3e): [per Javier O.] - Said best by the author, “The book is written for three audiences: (1) people finding themselves doing forecasting in business when they may not have had any formal training in the area; (2) undergraduate students studying business; (3) MBA students doing a forecasting elective”\nRegression and Other Studies: [per Javier O.] - Super applied textbook on advanced regression techniques, Bayesian inference, and causal inference\nSupervised Machine Learning for Text Analysis in R: NLP from two Posit engineers, Emil Hvitfeldt and Julia Silge - I treasure my signed copy!\nTidy Finance with R: [per Javier O.] - A favorite covering complex financial modeling, valuation, and pricing and represents “an opinionated approach to empirical research in financial economics [with an] open-source code base in multiple programming languages”\nFeature Engineering A-Z: Another Emil Hvitfeldt home run, this serves as a reference guide to nearly all feature engineering methods you will encounter with examples in R and Python"
+  },
+  {
+    "objectID": "scrapbook.html#r-packages",
+    "href": "scrapbook.html#r-packages",
+    "title": "Data Science Scrapbook",
+    "section": "R Packages",
+    "text": "R Packages\n\ntidyverse: A collection of packages for data manipulation and functional programming - the sooner you incorporate these tools into your coding, the happier your colleagues will be\ntidymodels: Hands-down my preferred collection of packages for building reproducible machine learning recipes, workflows, model tuning, model stacking, and cross-validation\ntidyverts: Tidymodels, but time series, from Rob Hyndman’s lab\nplotly: Interactive visualizations and 3D (WebGL) charts\nembed: Extension to the recipes tidyverse package\ncaret: Data processing and cross-validation with robust stratification options - one of the R tools I miss most when working with Python (Bonus: Data splitting with caret)\nigraph: Network theory and analysis - works in R and Python"
+  },
+  {
+    "objectID": "scrapbook.html#language-agnostic-etl-frameworks",
+    "href": "scrapbook.html#language-agnostic-etl-frameworks",
+    "title": "Data Science Scrapbook",
+    "section": "Language Agnostic ETL Frameworks",
+    "text": "Language Agnostic ETL Frameworks\n\nArrow: Apache Arrow is a columnar memory format for flat and hierarchical data, organized for efficient analytic operations, supporting zero-copy reads for lightning-fast data access without serialization overhead\nDuckDB: DuckDB is an in-process SQL OLAP database management system (that plays nicely with Arrow) capable of larger than memory processing of tabular data\nPolars: Polars is a lightning fast DataFrame library/in-memory query engine written in Rust and built upon the Arrow specification - It’s a great tool for efficient data wrangling, data pipelines, snappy APIs and much more\nSpark: Apache Spark is a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters"
+  },
+  {
+    "objectID": "scrapbook.html#python-resources",
+    "href": "scrapbook.html#python-resources",
+    "title": "Data Science Scrapbook",
+    "section": "Python Resources",
+    "text": "Python Resources\n\nThe Quick Python Book (3e): This book by Naomi Ceder is a few years old now (2018) but it’s the best end-to-end intro on Python that I’ve yet read taking you from basic classes / structures to function writing to working with modules\nPython Data Science Handbook: Introduction to the core libraries essential for working with data in Python\nEffective Pandas 2: Opinionated Patterns for Data Manipulation: After a wildly successful 1st edition, Matt Harrison is back with the revised 2nd edition with easy to follow tutorials for mastering the popular Pandas library\nTidy Finance with Python: This is one of my favorite newer books covering complex financial modeling, valuation, and pricing and represents “an opinionated approach to empirical research in financial economics [with an] open-source code base”\nThe Official Python Style Guide: Not a bad idea to co-opt this early - as with tidyverse in R, the sooner you do it, the happier your colleagues will be, on average"
+  },
+  {
+    "objectID": "scrapbook.html#python-packages",
+    "href": "scrapbook.html#python-packages",
+    "title": "Data Science Scrapbook",
+    "section": "Python Packages",
+    "text": "Python Packages\n\nNumPy: Brings the computational power of C and Fortran to Python programmers for applying high-level mathematical functions to arrays and more\nPandas: This is the most popular package for data manipulation and analysis with extended operations available for tabular and time series data\nMatplotlib: A comprehensive library for creating static, animated, and interactive visualizations in Python\nscikit-learn: Built on top of NumPy, SciPy, and matplotlib, “sklearn” makes the development of predictive analysis workflows a simple and reproducible process\nBeautiful Soup: The beautifulsoup4 library makes web scraping HTML and XML data a breeze\nStreamlit: Using pure Python, this package lets you build interactive web apps in minutes with no UI / front-end experience required\nShiny for Python: The popular Shiny framework for R is finally available for Python - Create highly interactive visualizations, realtime dashboards, data explorers, model demos, sophisticated workflow apps, and anything else you can imagine—all in pure Python, with no web development skills required"
+  }
+]

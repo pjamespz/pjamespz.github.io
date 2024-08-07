@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.551">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Antifragile Data Science - Data Science Scrapbook</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Antifragile Data Science</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/pjpmgmt" target="_blank"> <i class="bi bi-linkedin" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/peyton_pz" target="_blank"> <i class="bi bi-twitter" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://open.spotify.com/user/peytonjames?si=9afe9dca392f4b9c" target="_blank"> <i class="bi bi-spotify" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/pjamespz" target="_blank"> <i class="bi bi-github" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="./scrapbook.html">
+ <span class="dropdown-text">Steal These Notes</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://r4ds.hadley.nz/" target="_blank">
+ <span class="dropdown-text">R for Data Science</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.tidyverse.org/" target="_blank">
+ <span class="dropdown-text">Tidyverse</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://www.tidymodels.org/" target="_blank">
+ <span class="dropdown-text">Tidymodels</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://style.tidyverse.org/" target="_blank">
+ <span class="dropdown-text">Tidyverse Style Guide</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://feaz-book.com/" target="_blank">
+ <span class="dropdown-text">Feature Engineering, A-Z by Emil Hvitfeldt</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul>
+  <li><a href="#specific-statistical-methodologies" id="toc-specific-statistical-methodologies" class="nav-link active" data-scroll-target="#specific-statistical-methodologies">Specific Statistical Methodologies</a></li>
+  <li><a href="#r-books-classics" id="toc-r-books-classics" class="nav-link" data-scroll-target="#r-books-classics">R Books: Classics</a></li>
+  <li><a href="#r-books-applied-resources" id="toc-r-books-applied-resources" class="nav-link" data-scroll-target="#r-books-applied-resources">R Books: Applied Resources</a></li>
+  <li><a href="#r-packages" id="toc-r-packages" class="nav-link" data-scroll-target="#r-packages">R Packages</a></li>
+  <li><a href="#language-agnostic-etl-frameworks" id="toc-language-agnostic-etl-frameworks" class="nav-link" data-scroll-target="#language-agnostic-etl-frameworks">Language Agnostic ETL Frameworks</a></li>
+  <li><a href="#python-resources" id="toc-python-resources" class="nav-link" data-scroll-target="#python-resources">Python Resources</a></li>
+  <li><a href="#python-packages" id="toc-python-packages" class="nav-link" data-scroll-target="#python-packages">Python Packages</a></li>
+  </ul>
+</nav>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Data Science Scrapbook</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>As an earnest, early disclaimer, I’m stealing the basis of this list from the inimitable <a href="https://www.javierorracadeatcu.com/">Javier Orraca-Deatcu</a>. I offer thanks to Javier and everyone else at SoCal RUG for inducting me into the Quarto &amp; DuckDB fandoms, and helping me appreciate the breadth to which R can be applied.</p>
+<p>Here, I’m going to present a number of things I know to be helpful as well as various vignettes, package reference manuals, or case studies I’ve used in my work and have found success with. Consider these endorsements ranging from gentle to overwhelming. In the post-stackexchange/overflow era with LLM chaff filling the first three pages of all our search results, I’d say that textbook learning might be making a comeback.</p>
+<section id="specific-statistical-methodologies" class="level2">
+<h2 class="anchored" data-anchor-id="specific-statistical-methodologies">Specific Statistical Methodologies</h2>
+<ul>
+<li><p>Linear Mixed Models: Abandoning independence assumptions, looking at data that is explicitly hierarchical, longitudinal, or otherwise correlated.</p>
+<ul>
+<li><p><a href="https://stats.oarc.ucla.edu/other/mult-pkg/introduction-to-linear-mixed-models/">UCLA ARC Mixed Modeling Introduction</a></p></li>
+<li><p><a href="https://mspeekenbrink.github.io/sdam-r-companion/linear-mixed-effects-models.html">Case Study using <em>lme4</em> and <em>afex</em> packages</a></p></li>
+</ul></li>
+<li><p>LASSO [and its relatives]: Regression utilizing a penalization term for feature selection and dimension reduction.</p>
+<ul>
+<li><p><a href="https://glmnet.stanford.edu/articles/glmnet.html">Introduction to GLMNET from Tibsherani et al.&nbsp;at Stanford</a></p></li>
+<li><p><a href="https://online.stat.psu.edu/stat508/lesson/5">Penn State Graduate Data Mining Content on Shrinkage</a></p></li>
+<li><p><a href="https://stackoverflow.com/questions/23240182/deciding-threshold-for-glm-logistic-regression-model-in-r">Discussion on Deciding λ</a></p></li>
+<li><p><a href="https://glmnet.stanford.edu/reference/assess.glmnet.html">Assessing GLMNET results (Tibsherani et al.)</a></p></li>
+</ul></li>
+<li><p>AUC/ROC interpretation: Finding an optimal cutoff value for classification to maximize sensitivity and specificity.</p>
+<ul>
+<li><a href="https://pubmed.ncbi.nlm.nih.gov/38024184/">AUC/ROC in clinical diagnosis contexts</a></li>
+</ul></li>
+<li><p>Random Forests: Machine learning through a surfeit of decision trees. Fast and efficient, but significantly black-box.</p>
+<ul>
+<li><p><a href="https://cran.r-project.org/web/packages/ranger/ranger.pdf">Intro to the <em>ranger</em> R package, faster and more flexible than randomForest</a></p></li>
+<li><p><a href="https://www.css.cornell.edu/faculty/dgr2/_static/files/R_html/CompareRandomForestPackages.html">Examples from and comparisons between both rF and rr</a></p></li>
+</ul></li>
+<li><p>Multinomial Logistic Regression: Going beyond binary decisionmaking.</p>
+<ul>
+<li><a href="https://rpubs.com/beane/n4_2">Multinomial in R with <em>nnet</em></a></li>
+</ul></li>
+<li><p>Ordinal Logistic Regression: Logistic with considerations for specific ordering or unequal ‘distances’ between each level of the multinomial response</p>
+<ul>
+<li><p><a href="https://stats.oarc.ucla.edu/r/dae/ordinal-logistic-regression/">Ordinal Logistic with <em>polr</em>, from UCLA ARC</a></p></li>
+<li><p><a href="https://stats.oarc.ucla.edu/r/faq/ologit-coefficients/">Interpreting Ordinal Results, from UCLA ARC</a></p></li>
+</ul></li>
+</ul>
+</section>
+<section id="r-books-classics" class="level2">
+<h2 class="anchored" data-anchor-id="r-books-classics">R Books: Classics</h2>
+<ul>
+<li><a href="https://r4ds.hadley.nz/">R for Data Science (2e)</a>: The de facto introduction from the COPSS winner himself</li>
+<li><a href="https://adv-r.hadley.nz/">Advanced R (2e)</a>: Object oriented programming extensions</li>
+<li><a href="https://mastering-shiny.org/">Mastering Shiny</a>: [per Javier O.] - Designed to teach the foundations of Shiny for web development and more advanced concepts such as the introduction of modules to the Shiny framework</li>
+<li><a href="https://r-pkgs.org/">R Packages (2e)</a>: [per Javier O.] - The definitive reference point for R package development “covering workflow and process, alongside the presentation of all the important moving parts that make up an R package”</li>
+</ul>
+</section>
+<section id="r-books-applied-resources" class="level2">
+<h2 class="anchored" data-anchor-id="r-books-applied-resources">R Books: Applied Resources</h2>
+<ul>
+<li><a href="https://www.tmwr.org/">Tidy Modeling with R</a>: [per Javier O.] - A to Z resource on predictive modeling workflows using the tidymodels framework</li>
+<li><a href="https://www.manning.com/books/deep-learning-with-r-second-edition">Deep Learning with R (2e)</a>: [per Javier O.] - In-depth introduction to artificial intelligence and deep learning applications with R using the Keras library</li>
+<li><a href="https://otexts.com/fpp3/">Forecasting Principles and Practice (3e)</a>: [per Javier O.] - Said best by the author, “The book is written for three audiences: (1) people finding themselves doing forecasting in business when they may not have had any formal training in the area; (2) undergraduate students studying business; (3) MBA students doing a forecasting elective”</li>
+<li><a href="https://www.cambridge.org/core/books/regression-and-other-stories/DD20DD6C9057118581076E54E40C372C">Regression and Other Studies</a>: [per Javier O.] - Super applied textbook on advanced regression techniques, Bayesian inference, and causal inference</li>
+<li><a href="https://smltar.com/">Supervised Machine Learning for Text Analysis in R</a>: NLP from two Posit engineers, <a href="https://emilhvitfeldt.com/">Emil Hvitfeldt</a> and <a href="https://juliasilge.com/">Julia Silge</a> - I treasure my signed copy!</li>
+<li><a href="https://www.tidy-finance.org/r/">Tidy Finance with R</a>: [per Javier O.] - A favorite covering complex financial modeling, valuation, and pricing and represents “an opinionated approach to empirical research in financial economics [with an] open-source code base in multiple programming languages”</li>
+<li><a href="https://feaz-book.com/">Feature Engineering A-Z</a>: Another <a href="https://emilhvitfeldt.com/">Emil Hvitfeldt</a> home run, this serves as a reference guide to nearly all feature engineering methods you will encounter with examples in R and Python</li>
+</ul>
+</section>
+<section id="r-packages" class="level2">
+<h2 class="anchored" data-anchor-id="r-packages">R Packages</h2>
+<ul>
+<li><a href="https://www.tidyverse.org/">tidyverse</a>: A collection of packages for data manipulation and functional programming - the sooner you incorporate these tools into your coding, the happier your colleagues will be</li>
+<li><a href="https://www.tidymodels.org/">tidymodels</a>: Hands-down my preferred collection of packages for building reproducible machine learning recipes, workflows, model tuning, model stacking, and cross-validation</li>
+<li><a href="https://tidyverts.org/">tidyverts</a>: Tidymodels, but time series, from Rob Hyndman’s lab</li>
+<li><a href="https://plotly.com/r/">plotly</a>: Interactive visualizations and 3D (WebGL) charts</li>
+<li><a href="https://embed.tidymodels.org/">embed</a>: Extension to the <a href="https://recipes.tidymodels.org/">recipes</a> tidyverse package</li>
+<li><a href="https://cran.r-project.org/web/packages/caret/vignettes/caret.html">caret</a>: Data processing and cross-validation with <strong>robust</strong> stratification options - one of the R tools I miss most when working with Python (Bonus: <a href="https://topepo.github.io/caret/data-splitting.html">Data splitting with <em>caret</em></a><em>)</em></li>
+<li><a href="https://r.igraph.org/">igraph</a>: Network theory and analysis - works in R and Python</li>
+</ul>
+</section>
+<section id="language-agnostic-etl-frameworks" class="level2">
+<h2 class="anchored" data-anchor-id="language-agnostic-etl-frameworks">Language Agnostic ETL Frameworks</h2>
+<ul>
+<li><a href="https://arrow.apache.org/">Arrow</a>: Apache Arrow is a columnar memory format for flat and hierarchical data, organized for efficient analytic operations, supporting zero-copy reads for lightning-fast data access without serialization overhead</li>
+<li><a href="https://duckdb.org/">DuckDB</a>: DuckDB is an in-process SQL OLAP database management system (that plays nicely with Arrow) capable of larger than memory processing of tabular data</li>
+<li><a href="https://www.pola.rs/">Polars</a>: Polars is a lightning fast DataFrame library/in-memory query engine written in Rust and built upon the Arrow specification - It’s a great tool for efficient data wrangling, data pipelines, snappy APIs and much more</li>
+<li><a href="https://spark.apache.org/">Spark</a>: Apache Spark is a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters</li>
+</ul>
+</section>
+<section id="python-resources" class="level2">
+<h2 class="anchored" data-anchor-id="python-resources">Python Resources</h2>
+<ul>
+<li><a href="https://www.manning.com/books/the-quick-python-book-third-edition">The Quick Python Book (3e)</a>: This book by Naomi Ceder is a few years old now (2018) but it’s the best end-to-end intro on Python that I’ve yet read taking you from basic classes / structures to function writing to working with modules</li>
+<li><a href="https://jakevdp.github.io/PythonDataScienceHandbook/">Python Data Science Handbook</a>: Introduction to the core libraries essential for working with data in Python</li>
+<li><a href="https://store.metasnake.com/effective-pandas-book">Effective Pandas 2: Opinionated Patterns for Data Manipulation</a>: After a wildly successful 1st edition, Matt Harrison is back with the revised 2nd edition with easy to follow tutorials for mastering the popular Pandas library</li>
+<li><a href="https://www.tidy-finance.org/python/">Tidy Finance with Python</a>: This is one of my favorite newer books covering complex financial modeling, valuation, and pricing and represents “an opinionated approach to empirical research in financial economics [with an] open-source code base”</li>
+<li><a href="https://www.python.org/doc/essays/styleguide/">The Official Python Style Guide</a>: Not a bad idea to co-opt this early - as with tidyverse in R, the sooner you do it, the happier your colleagues will be, on average</li>
+</ul>
+</section>
+<section id="python-packages" class="level2">
+<h2 class="anchored" data-anchor-id="python-packages">Python Packages</h2>
+<ul>
+<li><a href="https://numpy.org/">NumPy</a>: Brings the computational power of C and Fortran to Python programmers for applying high-level mathematical functions to arrays and more</li>
+<li><a href="https://pandas.pydata.org/">Pandas</a>: This is the most popular package for data manipulation and analysis with extended operations available for tabular and time series data</li>
+<li><a href="https://matplotlib.org/">Matplotlib</a>: A comprehensive library for creating static, animated, and interactive visualizations in Python</li>
+<li><a href="https://scikit-learn.org/stable/">scikit-learn</a>: Built on top of NumPy, SciPy, and matplotlib, “sklearn” makes the development of predictive analysis workflows a simple and reproducible process</li>
+<li><a href="https://www.crummy.com/software/BeautifulSoup/">Beautiful Soup</a>: The <code>beautifulsoup4</code> library makes web scraping HTML and XML data a breeze</li>
+<li><a href="https://streamlit.io/">Streamlit</a>: Using pure Python, this package lets you build interactive web apps in minutes with no UI / front-end experience required</li>
+<li><a href="https://shiny.posit.co/py/">Shiny for Python</a>: The popular Shiny framework for R is finally available for Python - Create highly interactive visualizations, realtime dashboards, data explorers, model demos, sophisticated workflow apps, and anything else you can imagine—all in pure Python, with no web development skills required</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/pjamespz\.github\.io");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
