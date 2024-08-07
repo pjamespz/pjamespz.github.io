@@ -1,7 +1,7 @@
 ---
 title: "peyton"
 subtitle: "james pz."
-image: ./docs/images/peyton_headshot.jpg
+image: headshot.jpg
 about:
   template: trestles
   image-width: 5em
