@@ -1,5 +1,5 @@
 ---
-title: "Sampler Portfolio"
+title: ""
 title-block-banner: false
 toc: true
 toc-title: "Table of Contents"
@@ -9,8 +9,6 @@ toc-location: left
 Thank you for visiting my portfolio; here's a modest record of some of the work I'm both proud of & able to share.
 
 ## Papers-in-Progress
-
-Yiu A., Politewicz P., Salehi S., O’connell R., Chow E., Socioeconomic Deprivation and Opportunity’s Impact on Vaccine Decisions in Southern California (Pending submission, manuscript available on request)
 
 ### *Neighborhood Opportunity Associated with Physical Fitness in California Elementary Schools*
 
