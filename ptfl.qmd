@@ -1,5 +1,5 @@
 ---
-title: "Data Science Scrapbook"
+title: "Sampler Portfolio"
 title-block-banner: false
 toc: true
 toc-title: "Table of Contents"
@@ -18,7 +18,7 @@ Yiu A., **Politewicz P.**, Guo Y., Cooper D. (Pending submission, manuscript ava
 
 I analyzed the most recently available physical fitness data for California elementary and middle schools, investigating the relationships demonstrated between a schools' geographic **Childhood Opportunity Index** and its students' aerobic capacity and body composition. Mixed effects models and hierarchical Bayesian methods were both utilized, comparing and confirming our findings of improved outcomes alongside improved opportunity while controlling for correlation at the school and county level.
 
-![School-based Physical Fitness](SBPF.png)
+![School-based Physical Fitness](./img/SBPF.png)
 
 ### *Socioeconomic Deprivation and Opportunity’s Impact on Vaccine Decisions in Southern California*
 
@@ -26,7 +26,7 @@ Yiu A., **Politewicz P.**, Salehi S., O’connell R., Chow E., (Pending submissi
 
 I applied k-prototypes clustering and logistic regression to health records of vaccination decisions during the height of COVID. My research centered around mobile (drive-through) vaccine clinic deployment: who took advantage of these options, especially in Orange County, where they were established specifically to support communities in need? Findings aligned with intuitions surrounding many existing welfare programs. The people who took advantage of these clinics were **not** those most in need, but instead people of significant means at the upper bound of eligibility. This suggests that these clinics need to be administered with greater understanding of their audience, greater precision with their location, or greater communication regarding their presence.
 
-![Drive-through Vaccination Study](DTVS.png)
+![Drive-through Vaccination Study](./img/DTVS.png)
 
 ## Select Projects
 
@@ -36,8 +36,7 @@ This hackathon challenged us to explore, extract, transform, model, and present 
 
 The statistic we wanted to explore was **linguistic isolation**, a per-household measure. A household is linguisitically isolated if no one above the age of 15 can speak English with conversational fluency. Out of all of the states, California's linguistic isolation dropped most sharply over the time it was measured. Our team used a combination of comprehensive EDA and random forest modeling to intuit, and then confirm, that California's progress in this regard came from first-gen immigrant children participating in the public school system, and turning 16 with satisfactory English fluency to represent their household. Further, we used random forests to test the utility of this measure in predicting some demographic measures of interest (household income), and found it ranked highly in feature importance.
 
-![Comparative plot of linguistic isolation, by state](hackathon2.png)
-![California linguistic isolation by county](hackathon.png)
+![Comparative plot of linguistic isolation, by state](./img/hackathon2.png) ![California linguistic isolation by county](./img/hackathon.png)
 
 ### California State University - Long Beach, Shark Lab: *Data Engineering for Computer Vision*
 
@@ -45,16 +44,17 @@ Worked alongside a colleague from my cohort to provide frameworks for utilizing 
 
 These methods are being used to streamline work and clear through a backlog of video attached to three different research interests: shark-swimmer/surfer distance modeling from drone video, baited remote underwater video (BRUV) object detection (predator/prey, or simply indicating which sections of video are worth manual review), and wave break patterning. Computer vision was sought as a supplement for work with BRUV video in particular because water in the Pacific is much more sandy and murky compared to most other contexts, making this a challenge even for subject matter experts.
 
-[github to be shared upon manuscript draft completion]
+\[github to be shared upon manuscript draft completion\]
 
-{{< video shorksample.mp4 >}}
+{{< video ./img/shorksample.mp4 >}}
 
 ### UnVAEling Network Anomalies: *Detecting Network Attacks with Variational Autoencoders* [\[gh\]](https://github.com/connormcmanigal/IoT-IDS-VAE-Classification)
+
 We borrow the known RT-IoT2022 dataset to test the utility of variational autoencoders for developing a network traffic filter. Ever-more pertinent as IoT devices proliferate, network security with decidedly slim overhead - like a predetermined network traffic model - is an appealing goal. Autoencoders are used here as an *exclusionary* filter. That is, if a burst of network traffic does *not* match a pattern known to the VAE (demonstrates high reconstruction loss), it is discarded.
 
 We add to the extensive literature on this topic by testing the utility of a 'mixed-loss' VAE, explicitly segregating the calculation of loss for categorical and continuous features from one another. We found gentle, yet significant, results - this is toy data, and these methods were already well-explored. This remained instructive coursework, nonetheless.
 
-![Attack vs. Normal MLVAE latent space](VAE.png)
+![Attack vs. Normal MLVAE latent space](./img/VAE.png)
 
 ### Social Media Comment Scoring: *Attempting To Reverse-Engineer a Comment-scoring Algorithm* [\[gh\]](https://github.com/connormcmanigal/IoT-IDS-VAE-Classification)
 
@@ -62,4 +62,4 @@ We borrow data from the UCI Machine Learning repository to perform text analysis
 
 It turns out, it seems to be far less about *what* you write, and more about *when* you write it, plus *how snappy* your comments are. Polarity and subjectivity were not helpful predictors for a best_score response; instead, interactions (of any sort - positive and negative votes were both significant) and brevity were the real ticket. Performance assessment was done using MLP feed-forward NN regression. This begs the question: what makes a comment irresistible to interact with?
 
-![Clusters visualized by relationships between best score and comment length](senti.png)
+![Clusters visualized by relationships between best score and comment length](./img/senti.png)
