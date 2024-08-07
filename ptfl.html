@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Antifragile Data Science - Data Science Scrapbook</title>
+<title>Antifragile Data Science - Sampler Portfolio</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -180,7 +180,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data Science Scrapbook</h1>
+<h1 class="title">Sampler Portfolio</h1>
 </div>
 
 
@@ -207,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
 <p>I analyzed the most recently available physical fitness data for California elementary and middle schools, investigating the relationships demonstrated between a schools’ geographic <strong>Childhood Opportunity Index</strong> and its students’ aerobic capacity and body composition. Mixed effects models and hierarchical Bayesian methods were both utilized, comparing and confirming our findings of improved outcomes alongside improved opportunity while controlling for correlation at the school and county level.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="SBPF.png" class="img-fluid figure-img"></p>
+<p><img src="./img/SBPF.png" class="img-fluid figure-img"></p>
 <figcaption>School-based Physical Fitness</figcaption>
 </figure>
 </div>
@@ -218,7 +218,7 @@ ul.task-list li input[type="checkbox"] {
 <p>I applied k-prototypes clustering and logistic regression to health records of vaccination decisions during the height of COVID. My research centered around mobile (drive-through) vaccine clinic deployment: who took advantage of these options, especially in Orange County, where they were established specifically to support communities in need? Findings aligned with intuitions surrounding many existing welfare programs. The people who took advantage of these clinics were <strong>not</strong> those most in need, but instead people of significant means at the upper bound of eligibility. This suggests that these clinics need to be administered with greater understanding of their audience, greater precision with their location, or greater communication regarding their presence.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="DTVS.png" class="img-fluid figure-img"></p>
+<p><img src="./img/DTVS.png" class="img-fluid figure-img"></p>
 <figcaption>Drive-through Vaccination Study</figcaption>
 </figure>
 </div>
@@ -230,14 +230,14 @@ ul.task-list li input[type="checkbox"] {
 <h3 class="anchored" data-anchor-id="socal-rug-2024-data-science-hackathon-best-insight-winner-why-has-linguistic-isolation-improved-so-markedly-in-california-gh">SoCal RUG 2024 Data Science Hackathon, “Best Insight” Winner: <em>Why Has Linguistic Isolation Improved So Markedly in California?</em> <a href="https://github.com/pjamespz/socalRUG-Hackathon-2024/tree/main">[gh]</a></h3>
 <p>This hackathon challenged us to explore, extract, transform, model, and present on any data we found interesting from the University of Minnesota IPUMS database. The data engineering and ETL components of this work were nontrivial, given the size and schema used by IPUMS. We used Apache Arrow to perform our analysis on local machines - we were not given a cloud platform.</p>
 <p>The statistic we wanted to explore was <strong>linguistic isolation</strong>, a per-household measure. A household is linguisitically isolated if no one above the age of 15 can speak English with conversational fluency. Out of all of the states, California’s linguistic isolation dropped most sharply over the time it was measured. Our team used a combination of comprehensive EDA and random forest modeling to intuit, and then confirm, that California’s progress in this regard came from first-gen immigrant children participating in the public school system, and turning 16 with satisfactory English fluency to represent their household. Further, we used random forests to test the utility of this measure in predicting some demographic measures of interest (household income), and found it ranked highly in feature importance.</p>
-<p><img src="hackathon2.png" class="img-fluid" alt="Comparative plot of linguistic isolation, by state"> <img src="hackathon.png" class="img-fluid" alt="California linguistic isolation by county"></p>
+<p><img src="./img/hackathon2.png" class="img-fluid" alt="Comparative plot of linguistic isolation, by state"> <img src="./img/hackathon.png" class="img-fluid" alt="California linguistic isolation by county"></p>
 </section>
 <section id="california-state-university---long-beach-shark-lab-data-engineering-for-computer-vision" class="level3">
 <h3 class="anchored" data-anchor-id="california-state-university---long-beach-shark-lab-data-engineering-for-computer-vision">California State University - Long Beach, Shark Lab: <em>Data Engineering for Computer Vision</em></h3>
 <p>Worked alongside a colleague from my cohort to provide frameworks for utilizing computer vision in CSU-LB’s infamous <strong>Shark Lab</strong>. This effort was largely back-end, focused on the engineering, storage and management side, setting up a pipeline with Docker-deployed CVAT for undergraduate researchers to smoothly load in video and quickly apply computer vision tags. We then collect and pass the combined video and xml data to generate training data for YOLOv8 with some python scripting.</p>
 <p>These methods are being used to streamline work and clear through a backlog of video attached to three different research interests: shark-swimmer/surfer distance modeling from drone video, baited remote underwater video (BRUV) object detection (predator/prey, or simply indicating which sections of video are worth manual review), and wave break patterning. Computer vision was sought as a supplement for work with BRUV video in particular because water in the Pacific is much more sandy and murky compared to most other contexts, making this a challenge even for subject matter experts.</p>
 <p>[github to be shared upon manuscript draft completion]</p>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="shorksample.mp4"></video></div>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="./img/shorksample.mp4"></video></div>
 </section>
 <section id="unvaeling-network-anomalies-detecting-network-attacks-with-variational-autoencoders-gh" class="level3">
 <h3 class="anchored" data-anchor-id="unvaeling-network-anomalies-detecting-network-attacks-with-variational-autoencoders-gh">UnVAEling Network Anomalies: <em>Detecting Network Attacks with Variational Autoencoders</em> <a href="https://github.com/connormcmanigal/IoT-IDS-VAE-Classification">[gh]</a></h3>
@@ -245,7 +245,7 @@ ul.task-list li input[type="checkbox"] {
 <p>We add to the extensive literature on this topic by testing the utility of a ‘mixed-loss’ VAE, explicitly segregating the calculation of loss for categorical and continuous features from one another. We found gentle, yet significant, results - this is toy data, and these methods were already well-explored. This remained instructive coursework, nonetheless.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="VAE.png" class="img-fluid figure-img"></p>
+<p><img src="./img/VAE.png" class="img-fluid figure-img"></p>
 <figcaption>Attack vs.&nbsp;Normal MLVAE latent space</figcaption>
 </figure>
 </div>
@@ -256,7 +256,7 @@ ul.task-list li input[type="checkbox"] {
 <p>It turns out, it seems to be far less about <em>what</em> you write, and more about <em>when</em> you write it, plus <em>how snappy</em> your comments are. Polarity and subjectivity were not helpful predictors for a best_score response; instead, interactions (of any sort - positive and negative votes were both significant) and brevity were the real ticket. Performance assessment was done using MLP feed-forward NN regression. This begs the question: what makes a comment irresistible to interact with?</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="senti.png" class="img-fluid figure-img"></p>
+<p><img src="./img/senti.png" class="img-fluid figure-img"></p>
 <figcaption>Clusters visualized by relationships between best score and comment length</figcaption>
 </figure>
 </div>
