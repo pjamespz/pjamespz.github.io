@@ -1,0 +1,42 @@
+---
+title: "peyton"
+subtitle: "james pz."
+image: ./docs/images/peyton_headshot.jpg
+about:
+  template: trestles
+  image-width: 5em
+  image-shape: round
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/pjpmgmt/
+    - icon: github
+      text: GitHub
+      href: https://github.com/pjamespz
+    - icon: gpu-card
+      text: Portfolio
+      href: https://pjamespz.github.io/ptfl/
+      
+comments: false
+page-layout: full
+---
+
+I'm a data science all-rounder! My current work at UC Irvine centers around biostatistics, experimental design, public health, database management, data engineering, data privacy, and clinical & translational science. My previous industry experience with data science encompasses predictive modeling, business analytics, big data analysis on cloud platforms, process improvement and automation, natural language processing, and computer vision.
+
+I'm here to help others make **strategic decisions** or **exciting claims,** [**with confidence.**]{.underline}
+
+## Biostatistics, Data Science & Data Engineering
+
+I got into data science as a natural extension of business analysis and process improvement work, simply by virtue of employing the econometrics I learned in undergrad to the problems my teams and firms were facing. After building my acumen in the training and organizational development consulting space, I pivoted and created machine learning tools for prediction and text analysis with [XGBoost](https://xgboost.readthedocs.io/en/stable/), [gensim](https://radimrehurek.com/gensim/), [spaCy](https://spacy.io/), and [SageMaker](https://aws.amazon.com/sagemaker/).
+
+Presently, you can find me on the tail end of another pivot, this time into research and biostatistics. As a statistical consultant at UC Irvine, I'm collaborating with other statisticians, MDs, biologists, epidemiologists, geneticists, public health experts, and clinical practitioners. I bounce back and forth between wrestling with clever imputation for low sample/high missingness clinical trials and forcefully folding immense cohorts drawn from EHR databases into secure storage with [DuckDB](https://duckdb.org/), and everywhere in between.
+
+My daily driver toolset includes [RStudio](https://posit.co/download/rstudio-desktop/), [VSCode](https://code.visualstudio.com/) \[for Python & Jupyter\], [SAS](https://www.sas.com/en_us/software/stat.html), [Quarto](https://quarto.org/), [tidymodels](https://www.tidymodels.org/packages), [STAN](https://mc-stan.org/), [Apache Arrow](https://arrow.apache.org/), and [Tableau](https://www.tableau.com/).
+
+## Statistics + Data Science Communities
+
+I am incredibly grateful to have a number of safe havens I can visit to learn, share, and meet fellow researchers and professionals in this field. Among those, especially if you're also in SoCal, I'd credit and invite you to:
+
+-   [SoCal R Users Group](https://www.meetup.com/socal-rug/ "SoCal RUG meets on a monthly basis for online and in-person events")
+-   [Orange County/Long Beach Chapter of the ASA](https://community.amstat.org/oclb/home "Official ASA cluster for the area, full of sharp and clever folks from Long Beach to Irvine to Fullerton!")
+-   [CABERD Consortium](https://med.stanford.edu/spectrum/ctsa-cores-and-programs/research-methods-core/berd/caberd-consortium.html)

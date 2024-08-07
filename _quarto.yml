@@ -1,0 +1,53 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Antifragile Data Science"
+  site-url: https://pjamespz.github.io
+  description: "P. J. P.'s portfolio site."
+  navbar:
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/pjpmgmt
+        target: _blank
+      - icon: twitter
+        href: https://twitter.com/peyton_pz
+        target: _blank
+      - icon: spotify
+        href: https://open.spotify.com/user/peytonjames?si=9afe9dca392f4b9c
+        target: _blank
+      - icon: github
+        href: https://github.com/pjamespz
+        target: _blank
+      - text: Resources
+        menu:
+          - text: "Steal These Notes"
+            href: scrapbook.qmd
+          - text: R for Data Science
+            href: https://r4ds.hadley.nz/
+            target: _blank
+          - text: Tidyverse
+            href: https://www.tidyverse.org/
+            target: _blank
+          - text: Tidymodels
+            href: https://www.tidymodels.org/
+            target: _blank
+          - text: Tidyverse Style Guide
+            href: https://style.tidyverse.org/
+            target: _blank
+          - text: Feature Engineering, A-Z by Emil Hvitfeldt
+            href: https://feaz-book.com/
+            target: _blank
+
+format:
+  html:
+    theme: superhero
+    css: styles.css
+    
+editor: visual
+
+webr: 
+  show-startup-message: false
+  show-header-message: false
+  channel-type: 'post-message'
