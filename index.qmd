@@ -15,7 +15,7 @@ about:
       href: https://github.com/pjamespz
     - icon: gpu-card
       text: Portfolio
-      href: https://pjamespz.github.io/ptfl.html/
+      href: https://pjamespz.github.io/ptfl.html
       
 comments: false
 page-layout: full
