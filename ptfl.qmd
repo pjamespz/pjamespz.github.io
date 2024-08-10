@@ -6,7 +6,7 @@ toc-title: "Table of Contents"
 toc-location: left
 ---
 
-Thank you for visiting my portfolio; here's a modest record of some of the work I'm both proud of & able to share. For full detail, please check out my cv.
+Thank you for visiting my portfolio; here's a modest record of some of the work I'm both proud of & able to share. For full detail, please check out my CV!
 
 ## Papers-in-Progress
 
