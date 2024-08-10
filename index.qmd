@@ -1,5 +1,5 @@
 ---
-title: "peyton james pz."
+title: "peyton james politewicz."
 subtitle: "MS, data science [UCI]"
 image: ./img/headshot.jpg
 about:
