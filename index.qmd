@@ -1,6 +1,6 @@
 ---
-title: "peyton"
-subtitle: "james pz."
+title: "peyton james pz."
+subtitle: "MS, data science [UCI]"
 image: ./img/headshot.jpg
 about:
   template: trestles
@@ -15,7 +15,10 @@ about:
       href: https://github.com/pjamespz
     - icon: gpu-card
       text: Portfolio
-      href: https://pjamespz.github.io/ptfl.html
+      href: ptfl.qmd
+    - icon: bookmark-heart
+      text: Steal My Notes!
+      href: scrapbook.qmd
       
 comments: false
 page-layout: full

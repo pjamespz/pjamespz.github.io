@@ -3,9 +3,9 @@ project:
   output-dir: docs
 
 website:
-  title: "Antifragile Data Science"
+  title: "Artful Data Science"
   site-url: https://pjamespz.github.io
-  description: "P. J. P.'s portfolio site."
+  description: "PJP's portfolio site."
   navbar:
     right:
       - icon: linkedin
