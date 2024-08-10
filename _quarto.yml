@@ -41,6 +41,8 @@ website:
             target: _blank
       - text: Portfolio
         href: ptfl.qmd
+      - text: CV
+        href: https://pjamespz.github.io/PeytonPolitewicz_CV.pdf
       - text: About
         href: about.qmd
 
