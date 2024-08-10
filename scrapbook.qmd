@@ -24,7 +24,7 @@ Here, I'm going to present a number of things I know to be helpful as well as va
 
     -   [Penn State Graduate Data Mining Content on Shrinkage](https://online.stat.psu.edu/stat508/lesson/5)
 
-    -   [Discussion on Deciding &lambda;](https://stackoverflow.com/questions/23240182/deciding-threshold-for-glm-logistic-regression-model-in-r)
+    -   [Discussion on Deciding λ](https://stackoverflow.com/questions/23240182/deciding-threshold-for-glm-logistic-regression-model-in-r)
 
     -   [Assessing GLMNET results (Tibsherani et al.)](https://glmnet.stanford.edu/reference/assess.glmnet.html)
 
@@ -62,40 +62,39 @@ Here, I'm going to present a number of things I know to be helpful as well as va
 -   [Forecasting Principles and Practice (3e)](https://otexts.com/fpp3/): \[per Javier O.\] - Said best by the author, "The book is written for three audiences: (1) people finding themselves doing forecasting in business when they may not have had any formal training in the area; (2) undergraduate students studying business; (3) MBA students doing a forecasting elective"
 -   [Regression and Other Studies](https://www.cambridge.org/core/books/regression-and-other-stories/DD20DD6C9057118581076E54E40C372C): \[per Javier O.\] - Super applied textbook on advanced regression techniques, Bayesian inference, and causal inference
 -   [Supervised Machine Learning for Text Analysis in R](https://smltar.com/): NLP from two Posit engineers, [Emil Hvitfeldt](https://emilhvitfeldt.com/) and [Julia Silge](https://juliasilge.com/) - I treasure my signed copy!
--   [Tidy Finance with R](https://www.tidy-finance.org/r/): \[per Javier O.\] - A favorite covering complex financial modeling, valuation, and pricing and represents "an opinionated approach to empirical research in financial economics \[with an\] open-source code base in multiple programming languages"
 -   [Feature Engineering A-Z](https://feaz-book.com/): Another [Emil Hvitfeldt](https://emilhvitfeldt.com/) home run, this serves as a reference guide to nearly all feature engineering methods you will encounter with examples in R and Python
 
 ## R Packages
 
 -   [tidyverse](https://www.tidyverse.org/): A collection of packages for data manipulation and functional programming - the sooner you incorporate these tools into your coding, the happier your colleagues will be
--   [tidymodels](https://www.tidymodels.org/): Hands-down my preferred collection of packages for building reproducible machine learning recipes, workflows, model tuning, model stacking, and cross-validation
--   [tidyverts](https://tidyverts.org/): Tidymodels, but time series, from Rob Hyndman's lab
--   [plotly](https://plotly.com/r/): Interactive visualizations and 3D (WebGL) charts
--   [embed](https://embed.tidymodels.org/): Extension to the [recipes](https://recipes.tidymodels.org/) tidyverse package
+-   [tidymodels](https://www.tidymodels.org/): \[per Javier O.\] - Hands-down my preferred collection of packages for building reproducible machine learning recipes, workflows, model tuning, model stacking, and cross-validation
+-   [tidyverts](https://tidyverts.org/): \[per Javier O.\] - Tidymodels, but time series, from Rob Hyndman's lab
+-   [plotly](https://plotly.com/r/): \[per Javier O.\] - Interactive visualizations and 3D (WebGL) charts
+-   [embed](https://embed.tidymodels.org/): \[per Javier O.\] - Extension to the [recipes](https://recipes.tidymodels.org/) tidyverse package
 -   [caret](https://cran.r-project.org/web/packages/caret/vignettes/caret.html): Data processing and cross-validation with **robust** stratification options - one of the R tools I miss most when working with Python (Bonus: [Data splitting with *caret*](https://topepo.github.io/caret/data-splitting.html)*)*
 -   [igraph](https://r.igraph.org/): Network theory and analysis - works in R and Python
 
 ## Language Agnostic ETL Frameworks
 
--   [Arrow](https://arrow.apache.org/): Apache Arrow is a columnar memory format for flat and hierarchical data, organized for efficient analytic operations, supporting zero-copy reads for lightning-fast data access without serialization overhead
--   [DuckDB](https://duckdb.org/): DuckDB is an in-process SQL OLAP database management system (that plays nicely with Arrow) capable of larger than memory processing of tabular data
--   [Polars](https://www.pola.rs/): Polars is a lightning fast DataFrame library/in-memory query engine written in Rust and built upon the Arrow specification - It's a great tool for efficient data wrangling, data pipelines, snappy APIs and much more
--   [Spark](https://spark.apache.org/): Apache Spark is a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters
+-   [Arrow](https://arrow.apache.org/): \[per Javier O.\] - Apache Arrow is a columnar memory format for flat and hierarchical data, organized for efficient analytic operations, supporting zero-copy reads for lightning-fast data access without serialization overhead
+-   [DuckDB](https://duckdb.org/): \[per Javier O.\] - DuckDB is an in-process SQL OLAP database management system (that plays nicely with Arrow) capable of larger than memory processing of tabular data
+-   [Polars](https://www.pola.rs/): \[per Javier O.\] - Polars is a lightning fast DataFrame library/in-memory query engine written in Rust and built upon the Arrow specification - It's a great tool for efficient data wrangling, data pipelines, snappy APIs and much more
+-   [Spark](https://spark.apache.org/): \[per Javier O.\] - Apache Spark is a multi-language engine for executing data engineering, data science, and machine learning on single-node machines or clusters
 
 ## Python Resources
 
--   [The Quick Python Book (3e)](https://www.manning.com/books/the-quick-python-book-third-edition): This book by Naomi Ceder is a few years old now (2018) but it's the best end-to-end intro on Python that I've yet read taking you from basic classes / structures to function writing to working with modules
--   [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/): Introduction to the core libraries essential for working with data in Python
--   [Effective Pandas 2: Opinionated Patterns for Data Manipulation](https://store.metasnake.com/effective-pandas-book): After a wildly successful 1st edition, Matt Harrison is back with the revised 2nd edition with easy to follow tutorials for mastering the popular Pandas library
--   [Tidy Finance with Python](https://www.tidy-finance.org/python/): This is one of my favorite newer books covering complex financial modeling, valuation, and pricing and represents "an opinionated approach to empirical research in financial economics \[with an\] open-source code base"
--   [The Official Python Style Guide](https://www.python.org/doc/essays/styleguide/): Not a bad idea to co-opt this early - as with tidyverse in R, the sooner you do it, the happier your colleagues will be, on average
+-   [The Quick Python Book (3e)](https://www.manning.com/books/the-quick-python-book-third-edition): \[per Javier O.\] - This book by Naomi Ceder is a few years old now (2018) but it's the best end-to-end intro on Python that I've yet read taking you from basic classes / structures to function writing to working with modules
+-   [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/): \[per Javier O.\] - Introduction to the core libraries essential for working with data in Python
+-   [Effective Pandas 2: Opinionated Patterns for Data Manipulation](https://store.metasnake.com/effective-pandas-book): \[per Javier O.\] - After a wildly successful 1st edition, Matt Harrison is back with the revised 2nd edition with easy to follow tutorials for mastering the popular Pandas library
+-   [Tidy Finance with Python](https://www.tidy-finance.org/python/): \[per Javier O.\] - This is one of my favorite newer books covering complex financial modeling, valuation, and pricing and represents "an opinionated approach to empirical research in financial economics \[with an\] open-source code base"
+-   [The Official Python Style Guide](https://www.python.org/doc/essays/styleguide/): \[per Javier O.\] - Not a bad idea to co-opt this early - as with tidyverse in R, the sooner you do it, the happier your colleagues will be, on average
 
 ## Python Packages
 
--   [NumPy](https://numpy.org/): Brings the computational power of C and Fortran to Python programmers for applying high-level mathematical functions to arrays and more
--   [Pandas](https://pandas.pydata.org/): This is the most popular package for data manipulation and analysis with extended operations available for tabular and time series data
--   [Matplotlib](https://matplotlib.org/): A comprehensive library for creating static, animated, and interactive visualizations in Python
--   [scikit-learn](https://scikit-learn.org/stable/): Built on top of NumPy, SciPy, and matplotlib, "sklearn" makes the development of predictive analysis workflows a simple and reproducible process
--   [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/): The `beautifulsoup4` library makes web scraping HTML and XML data a breeze
--   [Streamlit](https://streamlit.io/): Using pure Python, this package lets you build interactive web apps in minutes with no UI / front-end experience required
--   [Shiny for Python](https://shiny.posit.co/py/): The popular Shiny framework for R is finally available for Python - Create highly interactive visualizations, realtime dashboards, data explorers, model demos, sophisticated workflow apps, and anything else you can imagine—all in pure Python, with no web development skills required
+-   [NumPy](https://numpy.org/): \[per Javier O.\] - Brings the computational power of C and Fortran to Python programmers for applying high-level mathematical functions to arrays and more
+-   [Pandas](https://pandas.pydata.org/): \[per Javier O.\] - This is the most popular package for data manipulation and analysis with extended operations available for tabular and time series data
+-   [Matplotlib](https://matplotlib.org/): \[per Javier O.\] - A comprehensive library for creating static, animated, and interactive visualizations in Python
+-   [scikit-learn](https://scikit-learn.org/stable/): \[per Javier O.\] - Built on top of NumPy, SciPy, and matplotlib, "sklearn" makes the development of predictive analysis workflows a simple and reproducible process
+-   [Beautiful Soup](https://www.crummy.com/software/BeautifulSoup/): \[per Javier O.\] - The `beautifulsoup4` library makes web scraping HTML and XML data a breeze
+-   [Streamlit](https://streamlit.io/): \[per Javier O.\] - Using pure Python, this package lets you build interactive web apps in minutes with no UI / front-end experience required
+-   [Shiny for Python](https://shiny.posit.co/py/): \[per Javier O.\] - The popular Shiny framework for R is finally available for Python - Create highly interactive visualizations, realtime dashboards, data explorers, model demos, sophisticated workflow apps, and anything else you can imagine—all in pure Python, with no web development skills required
